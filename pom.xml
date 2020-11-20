@@ -5,6 +5,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>evrika</module>
+        <module>evrika-service</module>
+        <module>products-service</module>
+        <module>orders-service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

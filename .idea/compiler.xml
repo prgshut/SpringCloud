@@ -6,10 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="orders-service" />
+        <module name="evrika-service" />
+        <module name="products-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="evrika" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="evrika-service" options="-parameters" />
+      <module name="orders-service" options="-parameters" />
+      <module name="products-service" options="-parameters" />
+    </option>
   </component>
 </project>
